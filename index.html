@@ -1,52 +1,111 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>B2-C1 Kurs</title>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #ffffff;
-        color: #333;
-        padding: 1rem;
-        line-height: 1.5;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>B2-C1 Kurs</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <style>
+    /* Reset some default */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #2c3e50;
+      padding: 2rem 1rem;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    main {
+  background: #ffffff;
+  width: 70vw;           /* Use 70% of viewport width */
+  max-width: 900px;      /* Optional: cap max width for big screens */
+  min-width: 300px;      /* Optional: prevent too narrow on small screens */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 2rem 2.5rem;
+}
+
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      color: #1a2a6c;
+      letter-spacing: 0.03em;
+    }
+
+    h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  /* Remove this: border-bottom: 2px solid #1a2a6c; */
+  padding-bottom: 0.3rem;
+  font-weight: 600;
+  text-decoration: underline;  /* Add this */
+  text-underline-offset: 4px;  /* Optional: adds some spacing */
+}
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    li + li {
+      margin-top: 0.8rem;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: #1a2a6c;
+      font-weight: 600;
+      background: #dbe9ff;
+      padding: 0.4rem 0.9rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      box-shadow: 0 2px 6px rgba(26, 42, 108, 0.2);
+    }
+
+    a:hover,
+    a:focus {
+      background-color: #1a2a6c;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(26, 42, 108, 0.4);
+      outline: none;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1.5rem 1.8rem;
+        border-radius: 8px;
       }
       h1 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
+        font-size: 1.5rem;
       }
       h2 {
-        font-size: 1.4rem;
-        margin-top: 2rem;
-        margin-bottom: 0.5rem;
-      }
-      ul {
-        padding-left: 1.2rem;
+        font-size: 1.25rem;
       }
       a {
-        color: #2a7ae2;
-        text-decoration: none;
+        padding: 0.35rem 0.75rem;
+        font-size: 0.95rem;
       }
-      a:hover,
-      a:focus {
-        text-decoration: underline;
-      }
-      @media (max-width: 600px) {
-        h1 {
-          font-size: 1.5rem;
-        }
-        h2 {
-          font-size: 1.2rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
+    }
+  </style>
+</head>
+<body>
+  <main>
     <h1>Willkommen bei der B2–C1-Lektion! Dies ist eine inoffizielle Website für diesen Kurs.</h1>
 
     <h2>Wortschatz: Juni</h2>
@@ -55,5 +114,6 @@
       <li><a href="lektion_juni_pdf/24.06.pdf" target="_blank" rel="noopener noreferrer">24.06</a></li>
       <li><a href="lektion_juni_pdf/25.06.pdf" target="_blank" rel="noopener noreferrer">25.06</a></li>
     </ul>
-  </body>
+  </main>
+</body>
 </html>
